@@ -3,9 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+}
 
 .nav-section {
-  position: relative;
 }
 .nav-top-space {
   display: flex;
@@ -82,6 +83,20 @@
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+  }
+}
+
+.hero-section {
+  position: relative;
+  margin: auto;
+
+  .image-slides {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 
