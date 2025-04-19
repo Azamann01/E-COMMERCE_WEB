@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body {
+  scroll-behavior: smooth;
+  background-color: #fff;
 }
 
 .nav-section {
@@ -87,18 +89,97 @@ body {
 }
 
 .hero-section {
-  position: relative;
+  position: absolute;
   background-image: url(shop-images/Hero-background-images/shopping-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: 80vh;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 8s infinite alternate;
+}
 
-  .hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  margin: 20px;
+}
+
+h1 {
+  color: #fff;
+}
+.btn-home {
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: rgba(0.5, 0, 0, 0.4);
+  margin: 10px;
+}
+.btn-homee {
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: rgba(0.5, 0, 0, 0.4);
+}
+.btn-home:hover {
+  font-weight: 200;
+  background-color: #fff;
+  color: #333;
+}
+.btn-homee:hover {
+  font-weight: 200;
+  background-color: #fff;
+  color: #333;
+}
+
+/* item-gallery section  */
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animate {
+  20% {
+    background-image: url(shop-images/Hero-background-images/shopping-img.jpeg);
+  }
+  30% {
+    background-image: url(shop-images/Hero-background-images/smiling-loving-couple-with-shopping-bags-city_1398-4676.jpg);
+  }
+  35% {
+    background-image: url(shop-images/Hero-background-images/clothing-shop-images.jpeg);
+  }
+  45% {
+    background-image: url(shop-images/Hero-background-images/pair-man-woman-wearing-glasses-carried-lots-paper-bags-shopping_1150-27742.jpg);
   }
 }
 
