@@ -2,14 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 body {
   scroll-behavior: smooth;
   background-color: #fff;
 }
 
-.nav-section {
-}
 .nav-top-space {
   display: flex;
   align-items: center;
@@ -88,19 +87,21 @@ body {
   }
 }
 
+/* HERO SECTION  */
 .hero-section {
   position: absolute;
   background-image: url(shop-images/Hero-background-images/shopping-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: auto;
-  height: 80vh;
-  margin: 15px;
+
+  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   animation: animate 8s infinite alternate;
+  z-index: 100;
 }
 
 .overlay {
@@ -160,12 +161,65 @@ h1 {
   color: #333;
 }
 
-/* item-gallery section  */
+.details-section {
+  width: auto;
+  margin: 30px;
+  background-color: seagreen;
+  margin-top: 105vh;
+  justify-content: center;
+  align-self: center;
+}
 
-.items-container {
-  display: flex;
+.details-text {
+  margin: 50px;
+  padding: 20px;
+}
+.text-details {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.para-details {
+  font-size: 20px;
+  font-weight: 300;
+}
+hr.line-br {
+  margin-top: 50px;
+}
+.side-details {
+  margin: 200px;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background: red;
+  color: #333;
+}
+.side-text {
+  text-transform: uppercase;
+  padding: 20px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  color: #333;
+}
+.side-para {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-side {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  border: 2px solid;
+  text-align: center;
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes animate {
