@@ -164,7 +164,7 @@ h1 {
 .details-section {
   width: auto;
   margin: 30px;
-  background-color: seagreen;
+  /* background-color: seagreen; */
   margin-top: 105vh;
   justify-content: center;
   align-self: center;
@@ -188,11 +188,15 @@ hr.line-br {
   margin-top: 50px;
 }
 .side-details {
-  margin: 200px;
-  margin-top: 50px;
+  margin: 10px;
+  margin-top: 30px;
   padding-bottom: 40px;
-  background: red;
+
   color: #333;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
 }
 .side-text {
   text-transform: uppercase;
@@ -210,16 +214,27 @@ hr.line-br {
   font-weight: 600;
 }
 .btn-side {
-  justify-self: center;
-  align-self: center;
-  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  outline: none;
-  border: 2px solid;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  border: 2px solid;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #333;
+}
+.btn-side:hover {
+  font-size: 14px;
+  font-weight: 400;
+}
+.line-brr {
+  margin-top: 50px;
 }
 
 @keyframes animate {
