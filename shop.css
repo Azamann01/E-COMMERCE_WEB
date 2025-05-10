@@ -237,6 +237,49 @@ hr.line-br {
   margin-top: 50px;
 }
 
+/* Gallery-section  */
+.gallery-section {
+  height: 80vh;
+}
+.galla-background {
+}
+.gala-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 2vh;
+  margin: 40px;
+}
+.gala {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.gala-image {
+  height: 300px;
+  margin: 5px;
+}
+.footer-container {
+  background-color: seagreen;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px;
+}
+.footer-text-para {
+  margin: 15px;
+  font-weight: bold;
+}
+
 @keyframes animate {
   20% {
     background-image: url(shop-images/Hero-background-images/shopping-img.jpeg);
