@@ -319,7 +319,7 @@ hr.line-br {
   font-weight: 600;
   font-size: 18px;
   color: seagreen;
-  margin: 15px;
+  margin: 19px;
 }
 .gal-bttn {
   /* text-decoration: none; */
@@ -330,10 +330,23 @@ hr.line-br {
   height: 50px;
   background-color: seagreen;
 }
+.gall-btn {
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 150px;
+  height: 50px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 50px;
+  cursor: pointer;
+}
 
 /* FOOTER-SECTION  */
+
 .footer-container {
-  background-color: seagreen;
+  /* background-color: seagreen; */
   display: block;
   align-items: center;
   justify-content: center;
@@ -347,6 +360,13 @@ hr.line-br {
 .footer-text-para {
   margin: 15px;
   font-weight: bold;
+}
+.footer-input {
+  margin: 15px;
+  height: 20vh;
+  width: 100%;
+  border: 1px;
+  outline: none;
 }
 
 @keyframes animate {
