@@ -238,10 +238,47 @@ hr.line-br {
 }
 
 /* Gallery-section  */
-.gallery-section {
-  height: 80vh;
-}
 .galla-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.backgrd-gal {
+  height: 60vh;
+  width: 1200px;
+  object-fit: cover;
+}
+.gal-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: rgba(0.5, 0, 0, 0.4);
+  margin: 10px;
+}
+.gallery-section {
+  /* height: 100vh; */
+}
+.backgrd-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  color: #fff;
 }
 .gala-text {
   display: flex;
