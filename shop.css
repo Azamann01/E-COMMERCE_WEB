@@ -368,6 +368,48 @@ hr.line-br {
   border: 1px;
   outline: none;
 }
+.foot-input {
+  border: 0.5px solid;
+  /* border-radius: 5px; */
+  width: 25%;
+  height: 50px;
+  margin: 20px;
+  margin-top: 30px;
+  padding: 22px;
+  font-size: 15px;
+  outline: none;
+  background-color: #fff;
+}
+.input-send {
+  border: 1px solid;
+  height: 50px;
+  width: 20%;
+  margin: -24px;
+  padding: -20px;
+  cursor: pointer;
+}
+/* LOWER FOOTER SECTION  */
+.lower-foot-contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  margin: 30px;
+}
+.text-contain {
+  gap: 80px;
+}
+/* .bx-right-arrow-alt{
+  display: flex;
+  border: 0.5px solid;
+  border-radius: 5px;
+  height: 30px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 2px 2px 10px;
+  margin: -20px;
+} */
 
 @keyframes animate {
   20% {
