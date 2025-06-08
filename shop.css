@@ -64,6 +64,7 @@ body {
     align-items: center;
     gap: 50px;
     padding: 30px;
+    position: relative;
   }
 
   .head-text {
@@ -71,12 +72,26 @@ body {
     justify-content: center;
     margin: auto;
   }
-  .icon-section {
+  .icon-section #cart-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    font-size: 20px;
+    font-size: 35px;
+    position: relative;
+  }
+  .cart-item-count {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    padding: 20px;
+    margin: 8px;
+    background-color: seagreen;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
   }
 
   .menu-open {
@@ -164,7 +179,6 @@ h1 {
 .details-section {
   width: auto;
   margin: 30px;
-  /* background-color: seagreen; */
   margin-top: 105vh;
   justify-content: center;
   align-self: center;
@@ -255,26 +269,6 @@ hr.line-br {
   align-content: center;
   display: flex;
 }
-/* .gal-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  color: #333;
-  border: 0.5px solid #fff;
-  border-radius: 10px;
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  cursor: pointer;
-  background-color: rgba(0.5, 0, 0, 0.4);
-  margin: 10px;
-} */
 
 .gala-text {
   display: flex;
@@ -433,7 +427,7 @@ hr.line-br {
   text-decoration: underline;
 }
 .social-link-list {
-  background: #333;
+  background: transparent;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -442,8 +436,22 @@ hr.line-br {
   height: 20vh;
 }
 .social-link {
-  color: #fff;
+  color: #333;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.social-link:hover {
   font-size: 30px;
+}
+.policy-seg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.priv-policy {
+  text-decoration: none;
+  list-style: none;
+  color: #333;
 }
 
 @keyframes animate {
