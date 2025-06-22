@@ -49,7 +49,7 @@
                   
                   <i class="bx bxs-user" id="user-logo"></i>
                 </div> -->
-            <div class="icon-section">
+            <div id="icon-section">
               <!-- cart-icon  -->
               <i class="bx bx-cart" id="cart-logo"></i>
               <span class="cart-item-count"></span>
@@ -58,9 +58,9 @@
         </div>
       </nav>
     </section>
-    <div class="cart">
+    <div class="cart active">
       <h2 class="cart-text">Your cart</h2>
-      <div class="cart-content">
+      <!-- <div class="cart-content">
         <div class="cart-box">
           <img
             src="shop-images/women-gallery/brown-shirt2.webp"
@@ -78,13 +78,13 @@
           </div>
           <i class="bx bx-message-square-x cart-remove"></i>
         </div>
-      </div>
+      </div> -->
       <div class="cart-total">
         <div class="total-title">Total</div>
         <div class="total-price">$0</div>
       </div>
       <button class="buy-btn">Proceed to Checkout</button>
-      <h2 class="cancel-btn">x</h2>
+      <h2 class="cancel-btn" id="cancel-pg">x</h2>
     </div>
     <section class="product-sec">
       <h2 class="head-text">Men & Women Clothing</h2>
@@ -172,5 +172,6 @@
         </div>
       </div>
     </section>
+    <script src="shop.js"></script>
   </body>
 </html>
