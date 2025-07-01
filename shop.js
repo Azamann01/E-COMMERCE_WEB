@@ -18,16 +18,24 @@ addBagButtons.forEach((button) => {
 const cartContent = document.querySelector(".cart-content");
 const addBagToButtons = (productBox) => {
   const productImgSrc = productBox.querySelector("img").src;
-  const productTitle = productBox.querySelector(".text-parag").textcontent;
-  const productPrice = productBox.querySelector(".price").textcontent;
+  const productTitle = productBox.querySelector(".text-parag").textContent;
+  const productPrice = productBox.querySelector(".price").textContent;
+
+  const cartItems = cartContent.querySelectorAll(".cart-product-title");
+  for (let item of cartItems) {
+    if (item.textContent === productTitle) {
+      alert("Item is already in the cart!");
+      return;
+    }
+  }
 
   const cartBox = document.createElement("div");
   cartBox.classList.add("cart-box");
   cartBox.innerHTML = `
-    <img src="${productImgSrc}"class="cart-img"/>
+    <img src="${productImgSrc}"class="cart-img">
           <div class="cart-detail">
-            <h2 class="cart-product-title">${productTitle}"</h2>
-            <span class="cart-price">${productPrice}"</span>
+            <h2 class="cart-product-title">${productTitle}</h2>
+            <span class="cart-price">${productPrice}</span>
             <div class="cart-quantity">
               <button id="minus">-</button>
               <span class="number">1</span>
