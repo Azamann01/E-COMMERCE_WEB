@@ -44,4 +44,27 @@ const addBagToButtons = (productBox) => {
           </div>
           <i class="bx bx-message-square-x cart-remove"></i>`;
   cartContent.appendChild(cartBox);
+
+  //   cart delete button deletes when clicked
+  cartBox.querySelector(".cart-remove").addEventListener("click", () => {
+    cartBox.remove();
+  });
+  // cart quantity increases and decreases
+  cartBox.querySelector(".cart-quantity").addEventListener("click", (event) => {
+    const numberElement = cartBox.querySelector(".number");
+    const decrementButton = cartBox.querySelector("#minus");
+    let quantity = numberElement.textContent;
+
+    if (event.target.id === "minus" && quantity > 1) {
+      quantity--;
+      if (quantity === 1) {
+        decrementButton.style.color = "#999";
+      }
+    } else if (event.target.id === "add") {
+      quantity++;
+      decrementButton.style.color = "#333";
+    }
+
+    numberElement.textContent = quantity;
+  });
 };

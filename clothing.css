@@ -185,6 +185,7 @@ body {
   z-index: 100;
   transition: 0.5s;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 .cart.active {
   right: 0;
@@ -244,6 +245,8 @@ body {
   border-left: 1px solid;
   border-right: 1px solid;
   cursor: default;
+  background-color: transparent;
+  color: #333;
 }
 .cart-remove {
   cursor: pointer;
